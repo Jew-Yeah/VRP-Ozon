@@ -98,8 +98,6 @@ python scoring.py --orders ml_ozon_logistic_dataSetOrders.json --couriers ml_ozo
 ## Технологии
 
 - Python 3.9+  
-- NumPy  
-- (опционально) PyTorch для контроля сида  
 - [Numba](https://numba.pydata.org/) можно подключить для ускорения «тяжёлых» циклов  
 
 ## Результаты
@@ -107,8 +105,6 @@ python scoring.py --orders ml_ozon_logistic_dataSetOrders.json --couriers ml_ozo
 - Базовый greedy (Stage4): ~3.96 млн score  
 - Stage5 (ALNS+LAHC, 1 минута): ~3.83 млн  
 - Stage5 (ALNS+LAHC, 1 час): ~3.18 млн  
-
-## Установка и запуск
 
 # Запуск пайплайна
 python baseline.py \
