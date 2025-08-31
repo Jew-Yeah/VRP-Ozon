@@ -6,6 +6,9 @@
 - `ml_ozon_logistic_dataSetCouriers.json` - данные о курьерах и их сервисных временах
 - `ml_ozon_logistic_dataSetOrders.json` - данные о заказах и их локациях
 
+Скачать их можно по ссылке:
+https://storage.codenrock.com/public/companies/codenrock-13/ml_ozon_logistic.zip?response-content-disposition=attachment%3B+filename%3D%22ml_ozon_logistic.zip%22
+
 ## Основной алгоритм (baseline.py)
 
 ### Запуск
