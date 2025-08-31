@@ -110,9 +110,6 @@ python scoring.py --orders ml_ozon_logistic_dataSetOrders.json --couriers ml_ozo
 
 ## Установка и запуск
 
-```bash
-cd logistics-optimizer
-
 # Запуск пайплайна
 python baseline.py \
    --orders data/ml_ozon_logistic_dataSetOrders.json \
