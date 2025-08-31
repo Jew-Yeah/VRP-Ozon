@@ -1,5 +1,5 @@
 # VRP-Ozon
-Реализация многошагового пайплайна для задачи оптимизации маршрутов курьеров (VRP-подобная постановка), выполненная в рамках хакатона.
+Реализация многошагового пайплайна для задачи оптимизации маршрутов курьеров (VRP-подобная постановка), выполненная в рамках хакатона. В задаче предполагается порядка 20k заказов и 200 курьеров. В качестве целевой функции выступает суммарное время затраченное всеми курьерами на доставку + 3000 * число неназначенных заказов.
 ## Структура файлов
 В папке должны лежать файлы:
 - `ml_ozon_logistic_dataDurations.json` - база данных расстояний между точками
@@ -111,7 +111,9 @@ python scoring.py --orders ml_ozon_logistic_dataSetOrders.json --couriers ml_ozo
 - Stage5 (ALNS+LAHC, 1 час): ~3.18 млн  
 
 # Запуск пайплайна
+```bash
 python baseline.py \
    --orders data/ml_ozon_logistic_dataSetOrders.json \
    --couriers data/ml_ozon_logistic_dataSetCouriers.json \
    --durations_db data/durations.sqlite
+```
