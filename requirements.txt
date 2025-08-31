@@ -1,0 +1,4 @@
+ijson==3.2.3
+tqdm
+psutil
+numba==0.56.4
